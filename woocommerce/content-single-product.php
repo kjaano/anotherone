@@ -123,7 +123,7 @@ if( have_rows('specs') ):
 	<?php the_sub_field('additional_info');?>
 </div>
 
- <p class="read-more-specs">Show full content</p>
+ <p class="read-more-specs">Read more</p>
 <hr>
 
 </div>
