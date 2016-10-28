@@ -1,0 +1,224 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import "settings";
+@import "leftside";
+@import "product";
+@import "footer";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.row {
+	max-width: 100%;
+}
+// TYPO
+h1 {font-size: 35px; font-weight: 600;}
+h2 {font-size: 28px; }
+
+h3 {font-size: 22px;}
+h4 {}
+.f-larger {}
+.f-large {}
+.f-medium {}
+.f-small {}
+.f-smaller, .f-smaller p {font-size: 12px;}
+.no-margin {margin: 0;}
+//.no-margin {margin: 0;}
+img {max-width: 100%;}
+.news_product {clear: both; }
+.left_side {background: #ecf0f1;}
+.right_side {background: #ededed;}
+
+
+// BUTTONS
+button {
+	background: #34495e;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	font-size: 12px;
+	margin: 8px 0;
+}
+//HEADER
+#header {
+	#searchform {
+		input {
+			border: 0;
+			border-bottom: 1px solid #95a5a6;
+			box-shadow: none;
+			margin: 5px 0;
+		}
+	}
+	ul.icons {
+	float: right;
+	height: 50px;
+	padding: 13px 0;
+	margin: 0;
+		li {
+			list-style: none;
+			float: left;
+			margin-left: 15px;
+			a {
+				text-indent: -9999px;
+				display: block;
+				background: red;
+				width: 24px;
+				height: 24px;
+			&.comparison-switch{background: url(../i/icons/sort.png) no-repeat center;}
+			&.shopping-switch{background: url(../i/icons/list.png) no-repeat center;}
+			&.cart-switch{background: url(../i/icons/shopping-cart.png) no-repeat center;}
+			}
+		}
+	}
+}
+.cart-block, .signup-block, .comparison-block, .shopping-block {
+   display: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border-top: 0;
+    &.pressed {
+       display: block;
+    }
+}
+
+// HOME
+
+ul.home_special_offers, ul.firstcat_special_offers, ul.secondcat_special_offers, ul.thirdcat_special_offers   {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		float: left;
+		div {
+			height: 300px;
+			display: table;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+				p {
+				color: #fff;
+    			background: rgba(0,0,0,0.4);
+    			padding: 10px 15px;
+			}
+			&:hover {
+				p {
+					color: #fff;
+    				background: rgba(0,0,0,0.4);
+    				padding: 10px 15px;
+				}
+			}
+		}
+	}
+}
+ul.home_special_offers {
+	li {
+		&:nth-child(1){width: 100%;}
+		&:nth-child(2){width: 60%;}
+		&:nth-child(3){width: 40%;
+			div {
+				height: 150px;
+			}
+		}
+		&:nth-child(4){width: 40%;
+			div {
+				height: 150px;
+			}
+		}
+		&:nth-child(5){width: 50%;}
+		&:nth-child(6){width: 50%;}
+		&:nth-child(7){width: 33.333%; 
+			div { height: 150px; }
+		}
+		&:nth-child(8){width: 33.333%; 
+			div { height: 150px; }
+		}
+		&:nth-child(9){width: 33.333%; 
+			div { height: 150px; }
+		}
+
+	}
+}
+
+// WOOCOMMERCE CATEGORY TYPES
+
+ul.firstcat_special_offers {
+	li {
+		&:nth-child(1){width: 60%;}
+		&:nth-child(2){width: 40%;
+			div {
+				height: 150px;
+			}
+		}
+		&:nth-child(3){width: 40%;
+			div {
+				height: 150px;
+			}
+		}
+		&:nth-child(4){width: 50%;}
+		&:nth-child(5){width: 50%;}
+	}
+}
+ul.secondcat_special_offers {
+	li {	
+		&:nth-child(1){width: 50%;}
+		&:nth-child(2){width: 50%;}
+	}
+}
+ul.thirdcat_special_offers {
+	li {
+		//&:nth-child(1){width: 100%;}
+		&:nth-child(1){width: 60%;}
+		&:nth-child(2){width: 40%;
+			div {
+				height: 150px;
+			}
+		}
+		&:nth-child(3){width: 40%;
+			div {
+				height: 150px;
+			}
+		}
+	}
+}

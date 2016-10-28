@@ -1,0 +1,21 @@
+// LEFT SIDEBAR
+#sidebar {
+	padding: 30px 15px;
+	h2 {
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	
+	ul {
+		margin: 0;
+		li {
+			list-style: none;
+			a {
+				color: #555;
+				line-height: 25px;
+				font-size: 12px;
+			}
+			border-bottom: 1px solid #efefef;
+		}
+	}
+}
