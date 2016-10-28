@@ -42,6 +42,10 @@
             $('.shopping-block').removeClass("pressed"); //hide shopping
             e.preventDefault();
         });
+		   $('.read-more-specs').on('click', function (e) {
+            $('.single-product-specs-wrapper').toggleClass("pressed");
+            e.preventDefault();
+        });
         // the end
         // This is for community slider. To make it work. Duh! 
         $('.community_slider').slick({
