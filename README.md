@@ -1,4 +1,4 @@
-# WordPress Starter Foundation Template
+# Anotherone by PinkyPie
 
 
 ## Includes
