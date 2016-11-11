@@ -18,6 +18,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
+	// I want to add a comment
 }
 
 wc_print_notices();
